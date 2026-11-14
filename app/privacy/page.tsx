@@ -1,0 +1,8 @@
+import { PageFrame, PrivacyNote } from "@/components/site-page"
+
+export default function PrivacyPage() {
+  return <PageFrame eyebrow="Privacy policy" title={<>Your data stays<br /><em>with you.</em></>} intro="NetPulse is designed as a local-first Windows utility. This policy explains exactly what the app does and does not do.">
+    <PrivacyNote />
+    <div className="policy-copy"><p className="policy-updated">Last updated: November 14, 2026</p><h2>What NetPulse collects</h2><p>NetPulse collects, stores, and transmits zero personal data. The app does not create accounts, use analytics, include advertising, or send telemetry to Jatayu Technology or any third party.</p><h2>How the app works locally</h2><p>Bandwidth counters are read locally from Windows using the <code>GetIfTable2</code> API. This information is used only to calculate the download and upload rates shown in the desktop overlay.</p><p>Your preferences — including position, theme, size, refresh rate, units, opacity, and optional ping settings — remain on your device in <code>%LOCALAPPDATA%\NetHUD\NetHUD.ini</code>.</p><h2>Optional latency checks</h2><p>If you enable ping, NetPulse sends standard ICMP echo packets to the DNS server you select: <code>1.1.1.1</code> (Cloudflare), <code>8.8.8.8</code> (Google), or <code>9.9.9.9</code> (Quad9). This is an optional, direct network request from your computer. Results are displayed locally and are not sent anywhere else.</p><h2>Contact</h2><p>If you have questions about this policy, contact us through the <a href="/contact">Contact page</a>. We may update this policy if the app’s behavior changes; the date above will always reflect the latest version.</p></div>
+  </PageFrame>
+}
