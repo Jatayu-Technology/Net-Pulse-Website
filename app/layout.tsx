@@ -1,32 +1,11 @@
-import { Geist, Geist_Mono, Roboto, Montserrat } from "next/font/google"
-
+import type { Metadata } from "next"
 import "./globals.css"
-import { ThemeProvider } from "@/components/theme-provider"
-import { cn } from "@/lib/utils";
 
-const montserratHeading = Montserrat({subsets:['latin'],variable:'--font-heading'});
+export const metadata: Metadata = {
+  title: "NetPulse — Your connection, in plain sight.",
+  description: "A lightweight, private network speed and latency overlay for Windows.",
+}
 
-const roboto = Roboto({subsets:['latin'],variable:'--font-sans'})
-
-const fontMono = Geist_Mono({
-  subsets: ["latin"],
-  variable: "--font-mono",
-})
-
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode
-}>) {
-  return (
-    <html
-      lang="en"
-      suppressHydrationWarning
-      className={cn("antialiased", fontMono.variable, "font-sans", roboto.variable, montserratHeading.variable)}
-    >
-      <body>
-        <ThemeProvider>{children}</ThemeProvider>
-      </body>
-    </html>
-  )
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  return <html lang="en"><body>{children}</body></html>
 }
