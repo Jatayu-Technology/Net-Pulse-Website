@@ -68,7 +68,7 @@ export default function Home() {
           <h1>Your connection,<br /><em>in plain sight.</em></h1>
           <p className="hero-lede">NetPulse is a tiny Windows overlay for the signal that matters. Real-time speed, optional latency, and zero noise — right where you need it.</p>
           <div className="hero-actions">
-            <a className="button button-primary" href="https://github.com/Jatayu-Technology/Net-Pulse/releases" target="_blank" rel="noreferrer">Get NetPulse <ArrowRight size={17} /></a>
+            <a className="button button-primary" href="https://apps.microsoft.com/detail/9NHLCBG4RS24?hl=en-us&gl=IN&ocid=pdpshare" target="_blank" rel="noreferrer">Get NetPulse <ArrowRight size={17} /></a>
             <a className="text-link" href="#features">Explore features <ArrowRight size={15} /></a>
           </div>
           <div className="hero-note"><ShieldCheck size={16} /> No accounts. No tracking. No data leaves your PC.</div>
@@ -115,7 +115,7 @@ export default function Home() {
       </section>
 
       <section className="download-panel">
-        <div className="section-shell download-inner"><div><div className="eyebrow light">03 / Ready when you are</div><h2>Make your connection<br /><em>visible.</em></h2></div><a className="button button-light" href="https://github.com/Jatayu-Technology/Net-Pulse/releases" target="_blank" rel="noreferrer">Download for Windows <ArrowRight size={17} /></a></div>
+        <div className="section-shell download-inner"><div><div className="eyebrow light">03 / Ready when you are</div><h2>Make your connection<br /><em>visible.</em></h2></div><a className="button button-light" href="https://apps.microsoft.com/detail/9NHLCBG4RS24?hl=en-us&gl=IN&ocid=pdpshare" target="_blank" rel="noreferrer">Download for Windows <ArrowRight size={17} /></a></div>
       </section>
 
       <footer className="site-footer"><div className="section-shell footer-inner"><Link className="brand" href="/"><span className="brand-mark"><span /><span /><span /></span><span>Net<span className="brand-accent">Pulse</span></span></Link><span className="footer-copy">A focused network overlay for Windows.</span><div className="footer-links"><a href="/about">About</a><a href="/contact">Contact</a><a href="/privacy">Privacy</a><a href="https://github.com/Jatayu-Technology/Net-Pulse" target="_blank" rel="noreferrer"><GitBranch size={16} /></a></div></div></footer>
